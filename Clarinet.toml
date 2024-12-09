@@ -5,6 +5,11 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
+[contracts.ehr-integration]
+path = 'contracts/ehr-integration.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.patient-health-record]
 path = 'contracts/patient-health-record.clar'
 clarity_version = 2
