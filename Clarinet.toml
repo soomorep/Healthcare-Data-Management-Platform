@@ -1,0 +1,24 @@
+[project]
+name = 'Healthcare-Data-Management-Platform'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.ehr-integration]
+path = 'contracts/ehr-integration.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.patient-health-record]
+path = 'contracts/patient-health-record.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
